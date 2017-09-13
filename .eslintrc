@@ -1,0 +1,10 @@
+{
+  "extends": "airbnb",
+  "env" : { "mocha": true },
+  "globals" : {
+    "assert": true,
+    "artifacts": true,
+    "contract": true,
+    "web3": true
+  }
+}

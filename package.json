@@ -1,0 +1,23 @@
+{
+  "name": "@hitchcott/multiplexer",
+  "version": "0.0.1",
+  "description": "Contract for sending ETH or ERC20 to multiple addresses in one transaction",
+  "scripts": {
+    "test": "truffle test"
+  },
+  "devDependencies": {
+    "@digix/truffle-lightwallet-provider": "^0.1.2",
+    "awaiting": "^3.0.0",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.3.0",
+    "zeppelin-solidity": "^1.2.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
