@@ -2,12 +2,17 @@ pragma solidity ^0.4.16;
 
 import './ERC20.sol';
 
+/// @title Multiplexer
+/// @author Chris Hitchcott
+/// :repository https://github.com/DigixGlobal/multiplexer
+
 contract Multiplexer {
 
 	function sendEth(address[] _to, uint256[] _value) payable returns (bool _success) {
 		// input validation
 		assert(_to.length == _value.length);
 		assert(_to.length <= 255);
+		// count values for refunding sender
 		uint256 beforeValue = msg.value;
 		uint256 afterValue = 0;
 		// loop through to addresses and send value
@@ -24,6 +29,7 @@ contract Multiplexer {
 	}
 
 	function sendErc20(address _tokenAddress, address[] _to, uint256[] _value) returns (bool _success) {
+		// input validation
 		assert(_to.length == _value.length);
 		assert(_to.length <= 255);
 		// use the erc20 abi
@@ -34,4 +40,5 @@ contract Multiplexer {
 		}
 		return true;
 	}
+
 }

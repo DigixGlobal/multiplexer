@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Contract for sending ETH or ERC20 to multiple addresses in one transaction",
   "scripts": {
-    "test": "truffle test"
+    "test": "truffle test",
+    "script": "RUN_SCRIPT='true' truffle test ./test/RunScriptWithWorkingWeb3.js --network mainnet"
   },
   "devDependencies": {
     "@digix/truffle-lightwallet-provider": "^0.1.2",
